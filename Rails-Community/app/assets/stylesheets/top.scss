@@ -1,0 +1,57 @@
+.content-warper{
+  display: flex;
+
+  .content-box{
+    flex: 4;
+    margin-right: 30px;
+    border: 2px solid black;
+
+    .content{
+      padding: 10px;
+      border: 2px solid black;
+      margin: 10px;
+
+      .user{
+        display:flex;
+
+        .user-image{
+          margin: 5px;
+        }
+
+        .name-study-parpas{
+          font-size: 15px;
+          width: 100%;
+
+          .user-profile{
+            display: flex;
+
+            .user-name{
+              padding: 5px  10px;
+            }
+            .user-study{
+              padding: 5px  10px;
+            }
+
+          }
+
+          .user-parpas{
+            padding: 5px  10px;
+            margin-top: 15px;
+
+          }
+        }
+      }
+      .text{
+        width: 100%;
+        padding-left: 5px;
+
+      }
+    }
+  }
+  .sidebar{
+    flex: 1;
+    border: 2px solid black;
+    padding: 10px;
+  }
+
+}

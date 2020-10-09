@@ -1,0 +1,12 @@
+<h1 class="title">
+  新規投稿
+</h1>
+
+<div>
+  <%= form_with model:@post, local: true do |f| %>
+  <%= f.text_area :content,  rows: 10 %>
+  <div class="submit">
+  <%= f.submit  "Create Box", class:"button" %>
+  </div>
+  <% end %>
+</div>

@@ -1,0 +1,41 @@
+<div class="content-warper">
+  
+  <div class="content-box">
+    
+    <%= @posts.each do |post| %>
+      
+      <div class="content">
+        
+        <div class="user">
+          
+          <div class="user-image">
+            <%= image_tag "noimage.jpg" %>
+          </div>
+          <div class="name-study-parpas">
+            
+            <div class="user-profile">
+              
+              <div class="user-name">
+                篤史
+              </div>
+              <div class="user-study">
+                学習歴：１年
+              </div>
+            </div>
+            <div class="user-parpas">
+              建設業界からIT業界に転職する為
+            </div>  
+          </div>
+            
+        </div>
+        <div class="text">
+          <p><%= post.content %></p>
+        </div>
+      </div>
+    <% end %>  
+  </div>
+  <div class="sidebar">
+    <div class="side-item"></div>
+    <div class="side-item"></div>
+  </div>
+</div>
